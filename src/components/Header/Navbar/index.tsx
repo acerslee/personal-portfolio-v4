@@ -25,19 +25,20 @@ const navObj: ObjType[] = [
 const Navbar: FC = () => {
 	const renderNavItems = (): ReactNode[] => {
 		return navObj.map((item: ObjType, i: number) => (
-			<Nav.Item>
-				<Nav.Link
-					href={item.href}
-					className={'text-base'}
-					eventKey={`link-${i}`}
-				>
-					{item.text}
-				</Nav.Link>
-			</Nav.Item>
+			<ul key={item.text} className="hover:text-blue">
+				<li >
+					<a
+						href={item.href}
+						className={'text-base'}
+					>
+						{item.text}
+					</a>
+				</li>
+			</ul>
 		))
 	}
 
-	return <Nav className='flex flex-row gap-8'>{renderNavItems()}</Nav>
+	return <nav className='flex flex-row gap-8'>{renderNavItems()}</nav>
 }
 
 export default Navbar
