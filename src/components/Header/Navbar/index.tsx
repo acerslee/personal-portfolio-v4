@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import Nav from 'react-bootstrap/Nav'
+import { client } from '@/utils/contentful'
 
 type ObjType = { [key: string]: string }
 
@@ -24,12 +24,15 @@ const navObj: ObjType[] = [
 
 const Navbar: FC = () => {
 	const renderNavItems = (): ReactNode[] => {
-		return navObj.map((item: ObjType, i: number) => (
-			<ul key={item.text} className="hover:text-blue">
-				<li >
+		return navObj.map((item: ObjType) => (
+			<ul
+				key={item.text}
+				className='hover:text-blue'
+			>
+				<li>
 					<a
 						href={item.href}
-						className={'text-base'}
+						className={'text-lg'}
 					>
 						{item.text}
 					</a>

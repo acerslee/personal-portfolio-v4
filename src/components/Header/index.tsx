@@ -7,12 +7,12 @@ import logo from 'public/alex-lee-logo.png'
 
 const Header: FC = () => {
 	return (
-		<header className='flex flex-row items-center justify-center'>
+		<header className='flex-center-around'>
 			<Image
 				src={logo}
 				alt={'webpage logo'}
-        height={100}
-        width={100}
+				height={100}
+				width={100}
 				priority
 			/>
 			<Navbar />

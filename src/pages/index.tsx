@@ -1,16 +1,14 @@
 import { NextPage } from 'next'
 import { client } from '../utils/contentful'
 
-// export async function getStaticProps() {
-// 	try {
-
-// 	} catch(e) {
-// 		console.error(e)
-// 	}
-// }
+import Hero from '@/components/Hero'
 
 const Home: NextPage = () => {
-	return <main>hello</main>
+	return (
+		<main>
+			<Hero />
+		</main>
+	)
 }
 
 export default Home
