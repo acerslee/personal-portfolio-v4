@@ -11,16 +11,14 @@ module.exports = {
 	theme: {
 		colors: {
 			black: '#000000',
-			white: '#ffffff',
-			blue: '#1fb6ff',
-			purple: '#7e5bef',
-			pink: '#ff49db',
-			orange: '#ff7849',
-			green: '#13ce66',
-			yellow: '#ffc82c',
+			ebony: '#04060d',
 			'gray-dark': '#273444',
+			iron: '#d3d4d7',
 			gray: '#8492a6',
 			'gray-light': '#d3dce6',
+			white: '#ffffff',
+			'torea-bay': '#143aa2',
+			'royal-blue': '#3e8de3',
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],

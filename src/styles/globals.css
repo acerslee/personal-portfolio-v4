@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+	/* section container */
 	.flex-center-around {
 		@apply flex items-center justify-around;
+	}
+
+	/* buttons */
+	/* .ease-out {
+		@apply transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	} */
+
+	/* hover states */
+	.hover-underline {
+		@apply hover:underline underline-offset-4;
 	}
 }
 
@@ -12,7 +23,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	/* background-color: #000000; */
+	background-color: #04060d;
 }
 
 html,
